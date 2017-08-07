@@ -1,0 +1,53 @@
+{
+	"jdbcType": "mysql",
+	"dataSourceDriver": "com.mysql.cj.jdbc.Driver",
+	"dataSourceUrl": "jdbc:mysql://172.22.202.166:3306/myh?useUnicode=true&characterEncoding=UTF8&serverTimezone=UTC",
+	"dataSourceUsername": "myh",
+	"dataSourcePassword": "uns1066",
+	"paging": false,
+	"pagesize": 10,
+	"dataSql": "SELECT g.GOODS_ID AS goodsId,g.GOODS_NAME AS goodsName,g.ANOTHER_NAME AS anotherName,g.PRICE AS price,g.SALES_VOLUME AS salesVolume,g.`STATUS` AS status,g.IS_DELETE AS isDelete,g.PAGE_VIEW AS pageView,f.HOST_URL AS hostUrl,f.FILE_URL AS fileUrl FROM t_goods g LEFT JOIN t_goods_file_relation gfr ON g.GOODS_ID = gfr.GOODS_ID LEFT JOIN t_upload_file f ON gfr.FILE_ID = f.FILE_ID GROUP BY g.GOODS_ID",
+	"countSql": "SELECT COUNT(DISTINCT g.GOODS_ID) FROM t_goods g LEFT JOIN t_goods_file_relation gfr ON g.GOODS_ID = gfr.GOODS_ID LEFT JOIN t_upload_file f ON gfr.FILE_ID = f.FILE_ID",
+	"index": "myh",
+	"type": "goods",
+	"customId": true,
+	"primaryKey": "goodsId",
+	"mapping": {
+		"properties": {
+			"anotherName": {
+				"type": "text",
+				"analyzer": "ik_max_word",
+				"search_analyzer": "ik_smart"
+			},
+			"fileUrl": {
+				"type": "text"
+			},
+			"goodsId": {
+				"type": "long"
+			},
+			"goodsName": {
+				"type": "text",
+				"analyzer": "ik_max_word",
+				"search_analyzer": "ik_smart"
+			},
+			"hostUrl": {
+				"type": "text"
+			},
+			"isDelete": {
+				"type": "integer"
+			},
+			"pageView": {
+				"type": "long"
+			},
+			"price": {
+				"type": "double"
+			},
+			"salesVolume": {
+				"type": "long"
+			},
+			"status": {
+				"type": "integer"
+			}
+		}
+	}
+}

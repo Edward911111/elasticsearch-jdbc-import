@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Built-By: uns
+Class-Path: lib/elasticsearch-5.4.2.jar lib/lucene-core-6.5.1.jar lib/
+ lucene-analyzers-common-6.5.1.jar lib/lucene-backward-codecs-6.5.1.ja
+ r lib/lucene-grouping-6.5.1.jar lib/lucene-highlighter-6.5.1.jar lib/
+ lucene-join-6.5.1.jar lib/lucene-memory-6.5.1.jar lib/lucene-misc-6.5
+ .1.jar lib/lucene-queries-6.5.1.jar lib/lucene-queryparser-6.5.1.jar 
+ lib/lucene-sandbox-6.5.1.jar lib/lucene-spatial-6.5.1.jar lib/lucene-
+ spatial-extras-6.5.1.jar lib/lucene-spatial3d-6.5.1.jar lib/lucene-su
+ ggest-6.5.1.jar lib/securesm-1.1.jar lib/jopt-simple-5.0.2.jar lib/hp
+ pc-0.7.1.jar lib/joda-time-2.9.5.jar lib/snakeyaml-1.15.jar lib/jacks
+ on-core-2.8.6.jar lib/jackson-dataformat-smile-2.8.6.jar lib/jackson-
+ dataformat-yaml-2.8.6.jar lib/jackson-dataformat-cbor-2.8.6.jar lib/t
+ -digest-3.0.jar lib/HdrHistogram-2.1.9.jar lib/jna-4.4.0.jar lib/tran
+ sport-5.4.2.jar lib/transport-netty3-client-5.4.2.jar lib/netty-3.10.
+ 6.Final.jar lib/transport-netty4-client-5.4.2.jar lib/netty-buffer-4.
+ 1.11.Final.jar lib/netty-codec-4.1.11.Final.jar lib/netty-codec-http-
+ 4.1.11.Final.jar lib/netty-common-4.1.11.Final.jar lib/netty-handler-
+ 4.1.11.Final.jar lib/netty-resolver-4.1.11.Final.jar lib/netty-transp
+ ort-4.1.11.Final.jar lib/reindex-client-5.4.2.jar lib/rest-5.4.2.jar 
+ lib/httpclient-4.5.2.jar lib/httpcore-4.4.5.jar lib/httpasyncclient-4
+ .1.2.jar lib/httpcore-nio-4.4.5.jar lib/commons-codec-1.10.jar lib/co
+ mmons-logging-1.1.3.jar lib/lang-mustache-client-5.4.2.jar lib/compil
+ er-0.9.3.jar lib/percolator-client-5.4.2.jar lib/log4j-core-2.7.jar l
+ ib/log4j-api-2.7.jar lib/slf4j-log4j12-1.7.21.jar lib/slf4j-api-1.7.2
+ 1.jar lib/log4j-1.2.17.jar lib/fastjson-1.2.6.jar lib/commons-io-2.4.
+ jar lib/ojdbc14-10.2.0.4.0.jar lib/mysql-connector-java-6.0.6.jar
+Build-Jdk: 1.8.0_131
+Created-By: Maven Integration for Eclipse
+Main-Class: name.edward.elasticsearch.Application
+
